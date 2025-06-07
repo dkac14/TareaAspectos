@@ -7,7 +7,6 @@ public class ColorChangeNotifier {
 
     public void setColor(Color color) {
         this.color = color;
-        // Aquí no hay print... lo hace el aspecto
     }
 
     public Color getColor() {

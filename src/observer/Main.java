@@ -16,17 +16,17 @@ public class Main extends JFrame{
         panel = new JPanel();
         notifier = new ColorChangeNotifier();
 
-        JButton rojo = new JButton("Rojo");
-        JButton verde = new JButton("Verde");
-        JButton azul = new JButton("Azul");
+        JButton cyan = new JButton("Cyan");
+        JButton pink = new JButton("Rosado");
+        JButton yellow = new JButton("Amarillo");
 
-        rojo.addActionListener(e -> changeBackground(Color.RED));
-        verde.addActionListener(e -> changeBackground(Color.GREEN));
-        azul.addActionListener(e -> changeBackground(Color.BLUE));
+        cyan.addActionListener(e -> changeBackground(Color.CYAN));
+        pink.addActionListener(e -> changeBackground(Color.pink));
+        yellow.addActionListener(e -> changeBackground(Color.YELLOW));
 
-        panel.add(rojo);
-        panel.add(verde);
-        panel.add(azul);
+        panel.add(cyan);
+        panel.add(pink);
+        panel.add(yellow);
 
         add(panel);
         setVisible(true);
@@ -34,7 +34,7 @@ public class Main extends JFrame{
 
     private void changeBackground(Color color) {
         panel.setBackground(color);
-        notifier.setColor(color); // Dispara la "notificación"
+        notifier.setColor(color);
     }
 
     public static void main(String[] args) {

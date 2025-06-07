@@ -8,7 +8,6 @@ public aspect ColorChangeAspect {
 
     private int contador = 0;
 
-    // Se ejecuta después de llamar a setColor(Color)
     after(Color c): call(void observer.ColorChangeNotifier.setColor(Color)) && args(c) {
         contador++;
         System.out.println(">> Color de fondo cambiado a: " + colorToString(c));
@@ -22,9 +21,9 @@ public aspect ColorChangeAspect {
     }
 
     private String colorToString(Color c) {
-        if (Color.RED.equals(c)) return "Rojo";
-        if (Color.GREEN.equals(c)) return "Verde";
-        if (Color.BLUE.equals(c)) return "Azul";
+        if (Color.CYAN.equals(c)) return "Cyan";
+        if (Color.pink.equals(c)) return "Rosado";
+        if (Color.YELLOW.equals(c)) return "Amarillo";
         return "Desconocido";
     }
 }
