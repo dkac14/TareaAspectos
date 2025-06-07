@@ -4,9 +4,9 @@
 ## 1. Descripción de la aplicación 
 La interfaz gráfica contiene una ventana con tres botones:
 
-- Rojo
-- Verde
-- Azul
+- Cyan
+- Rosado
+- Amarillo
 
 Cada botón cambia el color de fondo de la ventana principal. Además, imprime en la consola el nuevo color seleccionado.
 
