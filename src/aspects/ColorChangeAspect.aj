@@ -7,11 +7,14 @@ import javax.swing.JOptionPane;
 public aspect ColorChangeAspect {
 
     private int contador = 0;
-
+    
+    //after(Color c) se ejecuta después de la ejecución de setColor(Color).
+    
     after(Color c): call(void observer.ColorChangeNotifier.setColor(Color)) && args(c) {
         contador++;
         System.out.println(">> Color de fondo cambiado a: " + colorToString(c));
-
+        
+        //panel de notifición de los primeros 5 cambios de color
         if (contador == 5) {
             JOptionPane.showMessageDialog(null,
                 "Has cambiado el color 5 veces.",

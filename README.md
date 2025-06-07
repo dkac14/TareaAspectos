@@ -19,6 +19,5 @@ Se utilizó AspectJ para implementar la lógica de observación y registro de lo
 
 ## 3. Funcionalidad adicional implementada con AspectJ
 
-Se implementó una funcionalidad adicional que consiste en después realizar cinco cambios de color, se muestra una ventana emergente notificando al usuario que ha alcanzado cinco cambios.
-
+Se implementó una funcionalidad adicional que consiste en mostrar una ventana emergente después de realizar cinco cambios de color, notificando al usuario que ha alcanzado dicho número. Para ello, se incorporó un contador que lleva el registro de los primeros cinco cambios, y se añadió una condición que verifica si el contador ha llegado a 5, momento en el cual se activa la notificación.
 
